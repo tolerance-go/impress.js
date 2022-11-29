@@ -22,6 +22,7 @@
     "url": "https://github.com/impress/impress.js/issues"
   },
   "scripts": {
+    "clean": "rimraf .turbo node_modules",
     "all": "npm run build && npm run test && npm run lint",
     "build": "node build.js",
     "lint-": "npm exec -- jshint src test/*.js && npm exec -- jscs src test/*.js",
